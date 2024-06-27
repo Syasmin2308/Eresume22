@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information | Resume</title>
+  <style>
+    /* Basic Reset and Body Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #3d034b;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #3d034b;
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 10px 15px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #bd36f3;
+      border-radius: 5px;
+    }
+
+    .main-content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .section-content {
+      margin-bottom: 30px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #3d034b;
+      color: #fff;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* Student Page Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    td img {
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Information</h1>
+  </header>
+  
+  <div class="main-content">
+    <section id="student-info">
+      <h2>Student Details</h2>
+      <table>
+        <tr>
+          <th>Title</th>
+          <td>E-Resume </td> 
+        </tr>
+        <tr>
+          <th>Name</th>
+          <td>Nur Sarah Yasmin Bt Abdul Wahab</td> 
+        </tr>
+        <tr>
+          <th>Student ID</th>
+          <td>2023213706</td> 
+        </tr>
+        <tr>
+          <th>Group</th>
+          <td>CDIM2622A</td> 
+        </tr>
+        <tr>
+          <th>Course Code</th>
+          <td>IMS458</td> 
+        </tr>
+        <tr>
+          <th>Course Name</th>
+          <td>Web Design and Development</td> 
+        </tr>
+        <tr>
+          <th>Program Code</th>
+          <td>CDIM262</td> 
+        </tr>
+        <tr>
+          <th>Faculty</th>
+          <td>Faculty of Information System Management</td> 
+        </tr>
+        <tr>
+          <th>Submission Date</th>
+          <td>June 28, 2024</td> 
+        </tr>
+        <tr>
+          <th>Published URL</th>
+          <td><a href="https://syasmin2308.github.io/Eresume/" target="_blank">https://syasmin2308.github.io/Eresume/</a></td> 
+        </tr>
+        <tr>
+          <th>Image</th>
+          <td><img src="my pic.jpg" alt="Student Image" width="150" height="150"></td> 
+        </tr>
+      </table>
+    </section>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; E-resume Nur Sarah Yasmin 2024</p>
+    <p id="last-updated">Last Updated: <span></span></p>
+  </footer>
+
+  <script>
+    // Function to format the date
+    function formatDate(date) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString(undefined, options);
+    }
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Update the footer with the formatted date
+    document.getElementById('last-updated').querySelector('span').textContent = formatDate(currentDate);
+  </script>
+</body>
+</html>
