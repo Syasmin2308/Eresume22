@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience | Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Nur Sarah Yasmin Bt Abdul Wahab</h1>
+    <p>Recent Graduate in Information System Management </p> 
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="achievement.html">Achievements</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="More.html">More</a></li>
+
+    </ul>
+  </nav>
+  
+  <div class="main-content">
+    <div class="section-title">Experience</div>
+    <div class="experience-section">
+      
+      <div class="experience-item">
+        <h3>Sales Assistant</h3>
+        <h4>Ooppa Eyewear @ MOG</h4>
+        <div class="duration-location">
+          <span>Duration: May 2023 - September 2023</span>
+          <span>Location: Ampang, Selangor</span>
+        </div>
+        <ul>
+            <li>Responsibility 1: Welcome customers and offer personalized assistance with eyewear selection.</li>
+            <li>Responsibility 2: Explain product features and benefits, helping customers find the best fit</li>
+            <li>Responsibility 3: Handle payments, issue receipts, and manage returns efficiently</li>
+         </ul>
+      </div>
+      
+      <div class="experience-item">
+        <h3>Production Crew</h3>
+        <h4>Pau Pak Ngah</h4>
+        <div class="duration-location">
+          <span>Duration: March 2021 - July 2021</span>
+          <span>Location: Ampang, Selangor</span>
+        </div>
+        <ul>
+            <li>Responsibility 1: Prepare ingredients and assemble food products according to recipes and quality standards</li>
+            <li>Responsibility 2: Ensure cleanliness and organization of workstations and production areas</li>
+            <li>Responsibility 3: Collaborate with team members to meet production targets</li>
+         </ul>
+      </div>
+      
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; E-resume Nur Sarah Yasmin 2024</p>
+    <p id="last-updated">Last Updated: <span></span></p>
+</footer>
+
+<script>
+    function formatDate(date) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString(undefined, options);
+    }
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Update the footer with the formatted date
+    document.getElementById('last-updated').querySelector('span').textContent = formatDate(currentDate);
+</script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Nur Sarah Yasmin Bt Abdul Wahab</h1>
+    <p>Recent Graduate in Information System Management </p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="achievement.html">Achievements</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="More.html">More</a></li>
+
+    </ul>
+  </nav>
+  
+  <div class="main-content">
+    <div class="section-title">Profile</div>
+    <div class="section-content">
+      <img src="my pic.jpg" alt="Your Profile Picture" class="profile-img" height="250" width="200">
+      <p><strong>Full Name:</strong> Nur Sarah Yasmin Bt Abdul Wahab</p>
+      <p><strong>Address:</strong> Ampang, Selangor</p>
+      <p><strong>Email:</strong> yasminsrh23@gmail.com</p>
+      <p><strong>Phone:</strong> 01164168908</p>
+      <p><strong>About:</strong> I am an enthusiastic and dedicated individual with a keen interest in
+         integrating technology to solve real-world problems. My educational background, combined with
+          hands-on projects and internships, has equipped me with the necessary skills to excel in the field of information systems.</p>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; E-resume Nur Sarah Yasmin 2024</p>
+    <p id="last-updated">Last Updated: <span></span></p>
+</footer>
+
+<script>
+    function formatDate(date) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString(undefined, options);
+    }
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Update the footer with the formatted date
+    document.getElementById('last-updated').querySelector('span').textContent = formatDate(currentDate);
+</script>
+</footer>
+</body>
+</html>

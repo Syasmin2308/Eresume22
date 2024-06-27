@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements | Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Nur Sarah Yasmin Bt Abdul Wahab</h1>
+    <p>Recent Graduate in Information System Management </p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="achievement.html">Achievements</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="More.html">More</a></li>
+
+    </ul>
+  </nav>
+  
+  <div class="main-content">
+    <div class="section-title">Achievements</div>
+    <div class="achievements-section">
+      
+      <!-- Achievement from School 1 -->
+      <div class="achievement-item">
+        <h3>Universiti Teknologi Mara</h3>
+        <ul>
+            <li>Achievement 1: Member of Persatuan Mahasiswa Hadhari Puncak Perdana (PMHPP)</li>
+            <li>Achievement 2: Member of Association of Information System Management (AIMS)</li>    
+            <li>Achievement 3: Dean list in semester 3,5,6</li>
+        </ul>
+      </div>
+      
+      <!-- Achievement from School 2 -->
+      <div class="achievement-item">
+        <h3>SMK Taman Tasik</h3>
+        <ul>
+            <li>Achievement 1: Anugerah Kecemerlangan Ko-Kurikulum 2022</li>
+            <li>Achievement 2: Anugerah Perintis Pergerakan Badan Beruniform 2022</li>
+            <li>Achievement 3: Anugerah Pengetua STPM 2022</li>
+            <li>Achievement 4: President of Persatuan Pandu Puteri Klover SMKTT 2022</li>
+            <li>Achievement 5: Secreteary of Persatuan Pandu Puteri Klover Cawangan Selangor 2022</li>
+        </ul>
+      </div>
+      
+      <!-- Achievement from School 3 -->
+      <div class="achievement-item">
+        <h3>SMK Taman Kosas</h3>
+        <ul>
+            <li>Achievement 1: Secreteary of Persatuan Pandu Puteri 2020</li>
+            <li>Achievement 2: Anugerah Kecemerlangan SPM 2020</li>
+            <li>Achievement 3: President of Pandu Puteri Renjer SMKTK 2019</li>
+            <li>Achievement 4: Princess Fun Camp Pandu Puteri Renjer Peringkat Daerah 2019</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; E-resume Nur Sarah Yasmin 2024</p>
+    <p id="last-updated">Last Updated: <span></span></p>
+</footer>
+
+<script>
+    function formatDate(date) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString(undefined, options);
+    }
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Update the footer with the formatted date
+    document.getElementById('last-updated').querySelector('span').textContent = formatDate(currentDate);
+</script>
+</footer>
+</body>
+</html>

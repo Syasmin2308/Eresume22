@@ -1,0 +1,387 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #3d034b;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container .logo {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.name-title{
+  text-align: left;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+nav {
+  background-color: #3d034b;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #c284ff;
+  border-radius: 5px;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.section-content {
+  margin-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #3d034b;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+
+/* Button Styles */
+.video-button-container {
+  text-align: left; /* Center the button horizontally */
+  margin: 20px 0;     /* Add some margin for spacing */
+}
+
+.video-button {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #a500e6;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.video-button:hover {
+  background-color: #bd36f3;
+}
+
+/* Education page style */
+.education-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+}
+
+.education-item img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border-radius: 10%;
+}
+
+.education-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-details h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.education-details p {
+  margin-bottom: 3px;
+  font-size: 1rem;
+}
+
+/* Skills page style */
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-category {
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 600px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.skill-item {
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar div {
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+}
+
+.soft-skills .progress-bar div {
+  background-color: #4caf50;
+}
+
+.programming-languages .progress-bar div {
+  background-color: #2196f3;
+}
+
+.languages .progress-bar div {
+  background-color: #ff9800;
+}
+
+/* achievement page style */
+
+    .achievements-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .achievement-item {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 90%;
+      max-width: 600px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .achievement-item h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .achievement-item p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .achievement-item ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .achievement-item ul li {
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+
+/* experience page style */
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-item {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #0073e6;
+}
+
+.experience-item h4 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.experience-item p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.experience-item .duration-location {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.experience-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience-item ul li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.section-content {
+  margin-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #3d034b;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* References Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
